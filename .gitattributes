@@ -1,0 +1,58 @@
+# Set default behavior to automatically normalize line endings
+* text=auto eol=lf
+
+# Python files
+*.py text diff=python
+*.pyi text diff=python
+*.pyx text diff=cython
+*.pyd binary
+*.so binary
+*.pyc binary
+*.pyo binary
+__pycache__/* binary
+
+# Data files
+*.json text
+*.yaml text
+*.yml text
+*.toml text
+*.csv text
+*.sql text
+*.db binary
+*.sqlite3 binary
+
+# Documentation and markdown
+*.md text diff=markdown
+*.rst text
+*.txt text
+
+# Web files (for UI or documentation)
+*.html text diff=html
+*.css text diff=css
+*.js text diff=javascript
+
+# Images and binary assets
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Export ignore patterns - files excluded from archives
+/docs export-ignore
+/tests export-ignore
+/.github export-ignore
+/examples export-ignore
+/images export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+/README.md !export-ignore
+/.vscode export-ignore
+/.idea export-ignore
+/pyproject.toml !export-ignore
+/setup.py !export-ignore
+/setup.cfg !export-ignore
+
+# Jupyter notebooks
+*.ipynb text
